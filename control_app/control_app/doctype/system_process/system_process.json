@@ -1,0 +1,173 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-08-12 23:24:32.873473",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "system_module",
+  "status",
+  "section_break_cmw7y",
+  "process_subject",
+  "process_description",
+  "column_break_p0p8x",
+  "new_process_subject",
+  "new_process_description",
+  "section_break_e1rmu",
+  "system_process_scenario",
+  "section_break_eppzk",
+  "acceptance",
+  "column_break_6lori",
+  "recommendation",
+  "actions_section",
+  "action",
+  "column_break_eqzfz",
+  "issue_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "system_module",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "System Module",
+   "options": "System Module",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_cmw7y",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "process_subject",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Process Subject",
+   "reqd": 1
+  },
+  {
+   "fieldname": "process_description",
+   "fieldtype": "Text Editor",
+   "label": "Process Description"
+  },
+  {
+   "fieldname": "column_break_p0p8x",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "new_process_subject",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "New Process Subject"
+  },
+  {
+   "fieldname": "new_process_description",
+   "fieldtype": "Text Editor",
+   "label": "New Process Description"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_e1rmu",
+   "fieldtype": "Section Break",
+   "label": "Process Scenario"
+  },
+  {
+   "fieldname": "system_process_scenario",
+   "fieldtype": "Table",
+   "label": "System Process Scenario",
+   "options": "System Process Scenario"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_eppzk",
+   "fieldtype": "Section Break",
+   "label": "Agreement"
+  },
+  {
+   "fieldname": "column_break_6lori",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "recommendation",
+   "fieldtype": "Long Text",
+   "label": "Recommendation"
+  },
+  {
+   "default": "Todo",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Todo\nIn Progress\nTest\nOn Change Management\nDone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "acceptance",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nAccept\nReject"
+  },
+  {
+   "fieldname": "actions_section",
+   "fieldtype": "Section Break",
+   "label": "Actions"
+  },
+  {
+   "fieldname": "action",
+   "fieldtype": "Select",
+   "label": "Action",
+   "options": "On Development\nLater on Releases"
+  },
+  {
+   "fieldname": "issue_number",
+   "fieldtype": "Int",
+   "label": "Issue Number"
+  },
+  {
+   "fieldname": "column_break_eqzfz",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-12 23:38:59.629703",
+ "modified_by": "Administrator",
+ "module": "Control App",
+ "name": "System Process",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Implement Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Implement User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

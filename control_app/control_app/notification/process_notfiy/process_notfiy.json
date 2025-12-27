@@ -1,0 +1,27 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2023-08-12 23:50:10.150230",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "System Process",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<h3>New Process has been added </h3>\n\n<ul>\n<li>Module: {{ doc.system_module }}\n<li>Subject: {{ doc.process_subject }}\n<li>Description: {{ doc.process_description }}\n\n</ul>\n",
+ "modified": "2023-08-12 23:50:10.150230",
+ "modified_by": "Administrator",
+ "module": "Control App",
+ "name": "Process Notfiy",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "Implement Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Process Added"
+}
